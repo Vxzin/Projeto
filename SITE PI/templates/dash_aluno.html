@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Aluno{% endblock %}
+
+{% block content %}
+
+<h2>Fazer Denúncia</h2>
+
+<div class="card">
+
+    <h2>Fazer Denúncia</h2>
+
+    <form method="POST" action="/denunciar" class="form">
+
+        <input type="text" name="titulo" placeholder="Título da denúncia" required>
+
+        <textarea name="descricao" placeholder="Descreva o problema..." rows="4" required></textarea>
+
+        <button type="submit" class="btn-denuncia">Enviar denúncia</button>
+
+    </form>
+
+</div>
+
+{% endblock %}

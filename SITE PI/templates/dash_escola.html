@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Administração{% endblock %}
+
+{% block content %}
+
+<h2>Painel da Administração</h2>
+
+<!-- 🔴 DENÚNCIAS -->
+{% if denuncias|length == 0 %}
+    <p>Nenhuma denúncia ainda.</p>
+{% endif %}
+
+{% for d in denuncias %}
+<div class="card">
+
+    <h3>{{ d.titulo }}</h3>
+    <p>{{ d.descricao }}</p>
+
+    <p><strong>Autor:</strong> {{ d.autor }}</p>
+    <p><strong>Data:</strong> {{ d.data }}</p>
+    <p><strong>Status:</strong> {{ d.status }}</p>
+
+    {% if d.status == "Pendente" %}
+        <a href="/resolver/{{ loop.index0 }}" 
+           class="btn-denuncia"
+           onclick="return confirmarResolucao()">
+           Marcar como resolvido
+        </a>
+    {% endif %}
+
+</div>
+{% endfor %}
+
+
+<!-- 🔵 PERGUNTAS -->
+<h2 style="margin-top:40px;">Perguntas dos alunos</h2>
+
+{% if perguntas|length == 0 %}
+    <p>Nenhuma pergunta ainda.</p>
+{% endif %}
+
+{% for p in perguntas %}
+<div class="card">
+    <p><strong>{{ p.pergunta }}</strong></p>
+
+    {% if not p.resposta %}
+        <form method="POST" action="/responder/{{ loop.index0 }}" class="form">
+            <input type="text" name="resposta" placeholder="Responder..." required>
+            <button class="btn-denuncia">Responder</button>
+        </form>
+    {% else %}
+        <p><strong>Resposta:</strong> {{ p.resposta }}</p>
+    {% endif %}
+</div>
+{% endfor %}
+
+{% endblock %}

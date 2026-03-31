@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Ajuda com Acesso{% endblock %}
+
+{% block content %}
+
+<h2>Problemas para acessar</h2>
+
+<p style="margin-bottom: 25px; color: #aaa;">
+    O acesso ao sistema é feito utilizando <strong>CPF</strong> e <strong>nome completo</strong>. 
+    Caso esteja com dificuldades, veja abaixo algumas orientações.
+</p>
+
+<div class="info-section">
+
+    <div class="card">
+        <h3>CPF inválido</h3>
+        <p>
+            Digite apenas números, sem pontos ou traços. Exemplo: 12345678900.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Nome não reconhecido</h3>
+        <p>
+            Utilize seu nome completo conforme registrado na escola.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Não consigo acessar</h3>
+        <p>
+            Verifique se os dados estão corretos. Caso o problema continue, pode ser que seus dados não estejam cadastrados corretamente.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Posso acessar de qualquer dispositivo?</h3>
+        <p>
+            Sim, o sistema funciona em celulares, tablets e computadores com acesso à internet.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Minha identidade é segura?</h3>
+        <p>
+            Sim. Seus dados são protegidos e utilizados apenas para identificação interna. 
+            A identidade do aluno é <strong>criptografada</strong> e só pode ser acessada em casos extremos.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Posso denunciar sem login?</h3>
+        <p>
+            Não. O login é necessário para evitar denúncias falsas e garantir responsabilidade no uso do sistema.
+        </p>
+    </div>
+
+</div>
+
+<div class="card" style="margin-top: 30px;">
+    <h3>Problema não resolvido?</h3>
+    <p>
+        Caso você não consiga acessar mesmo seguindo as orientações, procure a secretaria da escola para verificar seus dados cadastrados.
+    </p>
+</div>
+
+{% endblock %}

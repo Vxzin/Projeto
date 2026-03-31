@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Login Administração{% endblock %}
+
+{% block content %}
+
+<div class="card form-card">
+    <h2>Login da Administração</h2>
+
+    <form method="POST" action="/login-escola" class="form">
+        <input type="text" name="usuario" placeholder="Usuário" required>
+        
+        <input type="password" name="senha" placeholder="Senha" required>
+        
+        <button type="submit" class="btn-denuncia">Entrar</button>
+    </form>
+
+    <p class="form-link">
+        Problemas? <a href="/ajuda-login">Clique aqui</a>
+    </p>
+</div>
+
+{% endblock %}

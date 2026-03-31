@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+
+<div class="sobre-container">
+    <div class="principal-text">
+        <h2>O fim do "ouvi dizer"</h2>
+        <p>
+            Páginas de fofoca e perfis de confissões podem parecer diversão, mas são o principal meio de propagação de <strong>Fake News</strong> dentro do ambiente escolar.
+        </p>
+        <p>
+            Este portal foi criado para permitir que alunos denunciem situações de forma <strong>segura, responsável e controlada</strong>.
+        </p>
+    </div>
+
+    <img src="{{ url_for('static', filename='img/index.jpg') }}" class="img-escola">
+</div>
+
+
+<section class="info-section">
+
+    <div class="card">
+        <h2>Como funciona?</h2>
+        <p>
+            O aluno pode relatar boatos, perfis falsos ou situações suspeitas através de um sistema simples e direto. 
+            Cada denúncia é analisada pela equipe administrativa da escola antes de qualquer ação ser tomada.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Segurança e Privacidade</h2>
+        <p>
+            Sua identidade é protegida. Os dados são armazenados de forma segura e não são expostos publicamente.
+        </p>
+        <p>
+            A identificação do aluno é <strong>criptografada</strong>, sendo acessada apenas em situações extremamente necessárias, como denúncias falsas ou má utilização da plataforma.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Ambiente mais justo</h2>
+        <p>
+            O objetivo é combater a desinformação e promover um ambiente escolar mais saudável, onde conflitos possam ser resolvidos com responsabilidade.
+        </p>
+    </div>
+
+</section>
+
+
+<div class="btn-container">
+    <a href="/login-aluno" class="btn-denuncia btn-main">
+        Fazer denúncia
+    </a>
+</div>
+
+{% endblock %}

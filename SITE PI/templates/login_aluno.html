@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Login Aluno{% endblock %}
+
+{% block content %}
+
+<div class="card form-card">
+
+    <h2>Acesso do Aluno</h2>
+
+    <p style="color: #aaa; margin-bottom: 20px;">
+        Informe seus dados para acessar o sistema de denúncias.
+    </p>
+
+    <form method="POST" action="/login-aluno" class="form">
+
+        <input type="text" name="nome" placeholder="Nome completo" required>
+
+        <input type="text" name="cpf" placeholder="CPF (somente números)" required>
+
+        <button type="submit" class="btn-denuncia">Entrar</button>
+
+    </form>
+    {% if erro %}
+<p style="color: #ff4d4d; margin-top: 10px;">{{ erro }}</p>
+{% endif %}
+
+    <p class="form-link">
+        Problemas para acessar? <a href="/ajuda-login">Clique aqui</a>
+    </p>
+
+</div>
+
+{% endblock %}

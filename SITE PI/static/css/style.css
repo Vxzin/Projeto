@@ -1,0 +1,284 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d12;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #e0e0e0;
+}
+
+/* HEADER */
+.top-barPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16161d;
+    padding: 0 8%;
+    height: 90px;
+    border-bottom: 2px solid #ff004c;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.Page {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.dev-name {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* NAV */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.redirect {
+    text-decoration: none;
+    color: #a0a0b0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.redirect:hover {
+    color: #fff;
+}
+
+/* CONTAINER */
+.content-container {
+    padding: 40px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HOME */
+.sobre-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.principal-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.principal-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.img-escola {
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+/* CARDS */
+.card {
+    background: #16161d;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #252530;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #ff004c;
+    margin-bottom: 15px;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* INPUTS PADRÃO (UNIFICADO) */
+.form input,
+.form textarea {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    background: #0d0d12;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #777;
+}
+
+/* FOCO */
+.form input:focus,
+.form textarea:focus {
+    border-color: #ff004c;
+    box-shadow: 0 0 5px #ff004c50;
+}
+
+/* BOTÃO */
+.btn-denuncia {
+    display: inline-block;
+    background: #ff004c;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-denuncia:hover {
+    background: #d4003f;
+    transform: translateY(-2px);
+}
+
+/* CENTRALIZAR FORM */
+.form-card {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* LINKS */
+.form-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.form-link a {
+    color: #ff004c;
+    text-decoration: none;
+}
+
+/* DASH ADMIN */
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* GRID */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* BOTÃO HOME */
+.btn-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-main {
+    font-size: 1.2rem;
+    padding: 20px 60px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .top-barPrincipal {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+    }
+}
+/* PERGUNTAS */
+.perguntas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pergunta-card {
+    border-left: 4px solid #ff004c;
+}
+
+/* PERGUNTAS */
+.perguntas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pergunta-card {
+    border-left: 4px solid #ff004c;
+}
+
+.pergunta-form {
+    margin-bottom: 40px;
+}
+
+.pergunta-box {
+    margin-bottom: 10px;
+}
+
+.pergunta-text {
+    font-weight: 600;
+}
+
+.resposta-box {
+    background: #1a1a22;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 3px solid #ff004c;
+}
+
+.resposta-text {
+    color: #e0e0e0;
+}
+
+.aguardando {
+    color: #888;
+    font-size: 0.9rem;
+}
+.pergunta-form {
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 600px;
+}
+.card {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.card form {
+    margin-top: 10px;
+}
+.card {
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}

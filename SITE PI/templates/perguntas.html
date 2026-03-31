@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Perguntas{% endblock %}
+
+{% block content %}
+
+<h2>Perguntas e Respostas</h2>
+
+<p style="color:#aaa; margin-bottom:20px;">
+    Tem alguma dúvida? Envie abaixo e a escola irá responder.
+</p>
+
+<div class="card form-card pergunta-form">
+    <form method="POST" action="/enviar-pergunta" class="form">
+        <textarea name="pergunta" placeholder="Digite sua pergunta..." required></textarea>
+        <button type="submit" class="btn-denuncia">Enviar pergunta</button>
+    </form>
+</div>
+
+<div class="perguntas-container">
+
+{% for p in perguntas %}
+<div class="card pergunta-card">
+
+    <div class="pergunta-box">
+        <p class="pergunta-text">💬 {{ p.pergunta }}</p>
+        <p style="font-size: 0.8rem; color:#777;">{{ p.data }}</p>
+    </div>
+
+    {% if p.resposta %}
+        <div class="resposta-box">
+            <p class="resposta-text">Resposta: {{ p.resposta }}</p>
+        </div>
+    {% else %}
+        <p class="aguardando">Aguardando resposta...</p>
+    {% endif %}
+
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}
