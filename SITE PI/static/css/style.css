@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     color: #e0e0e0;
 }
 
-/* HEADER */
 .top-barPrincipal {
     display: flex;
     justify-content: space-between;
@@ -37,7 +35,6 @@ body {
     color: #888;
 }
 
-/* NAV */
 .nav-links {
     display: flex;
     gap: 25px;
@@ -54,14 +51,14 @@ body {
     color: #fff;
 }
 
-/* CONTAINER */
+
 .content-container {
     padding: 40px 8%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* HOME */
+
 .sobre-container {
     display: flex;
     gap: 40px;
@@ -85,7 +82,6 @@ body {
     border: 1px solid #333;
 }
 
-/* CARDS */
 .card {
     background: #16161d;
     padding: 25px;
@@ -99,14 +95,12 @@ body {
     margin-bottom: 15px;
 }
 
-/* FORM */
 .form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* INPUTS PADRÃO (UNIFICADO) */
 .form input,
 .form textarea {
     padding: 14px;
@@ -124,14 +118,12 @@ body {
     color: #777;
 }
 
-/* FOCO */
 .form input:focus,
 .form textarea:focus {
     border-color: #ff004c;
     box-shadow: 0 0 5px #ff004c50;
 }
 
-/* BOTÃO */
 .btn-denuncia {
     display: inline-block;
     background: #ff004c;
@@ -150,14 +142,12 @@ body {
     transform: translateY(-2px);
 }
 
-/* CENTRALIZAR FORM */
 .form-card {
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
 }
 
-/* LINKS */
 .form-link {
     margin-top: 15px;
     font-size: 0.9rem;
@@ -168,12 +158,10 @@ body {
     text-decoration: none;
 }
 
-/* DASH ADMIN */
 .card h3 {
     margin-bottom: 10px;
 }
 
-/* GRID */
 .info-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -181,7 +169,6 @@ body {
     margin-top: 40px;
 }
 
-/* BOTÃO HOME */
 .btn-container {
     margin-top: 50px;
     text-align: center;
@@ -192,7 +179,6 @@ body {
     padding: 20px 60px;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
     .top-barPrincipal {
         flex-direction: column;
@@ -205,7 +191,6 @@ body {
         flex-direction: column;
     }
 }
-/* PERGUNTAS */
 .perguntas-container {
     display: flex;
     flex-direction: column;
@@ -216,7 +201,6 @@ body {
     border-left: 4px solid #ff004c;
 }
 
-/* PERGUNTAS */
 .perguntas-container {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,4 @@
-// fade ao carregar
+
 window.onload = () => {
     document.body.style.opacity = 0;
     setTimeout(() => {
@@ -6,12 +6,10 @@ window.onload = () => {
     }, 100);
 };
 
-// confirmação resolver
 function confirmarResolucao() {
     return confirm("Tem certeza que deseja marcar como resolvido?");
 }
 
-// CPF só número
 document.addEventListener("DOMContentLoaded", () => {
     const cpfInput = document.querySelector("input[name='cpf']");
 
